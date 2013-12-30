@@ -13,7 +13,7 @@ public class Getpid {
     }
 
     public static void main(String[] args) {
-        LibC libc = LibraryLoader.create(LibC.class).load("c");
+        LibC libc = LibraryLoader.create(LibC.class).load("cygwin1");
 
         System.out.println("pid=" + libc.getpid() + " parent pid=" + libc.getppid());
     }
